@@ -3,6 +3,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    margin: 0px;
+}
+
 .logo {
     position: absolute;
     width: 185.34px;
@@ -12,8 +16,9 @@
 }
 
 .navBar {
-    position: absolute;
+    position: relative;
     width: 1400px;
+    /*change to percentages*/
     height: 78px;
     left: 0px;
     top: 20px;
@@ -75,11 +80,11 @@ a:hover {
 
 .headerMain {
     display: block;
-    position: absolute;
+    position: relative;
     width: 1126px;
     height: 496px;
     left: 145px;
-    top: 128px;
+    top: 30px;
 }
 
 .tMain {
@@ -188,6 +193,13 @@ a:hover {
     margin-right: 8.5px;
     top: 5px;
     padding: 0px;
+}
+
+.space {
+    width: 10px;
+    height: 1000px;
+    display: block;
+    margin: 0px;
 }
 
 
