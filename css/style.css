@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    position: absolute;
+    width: 185.34px;
+    height: 31.97px;
+    left: 143.92px;
+    top: 22px;
+}
+
+.navBar {
+    position: absolute;
+    width: 1400px;
+    height: 78px;
+    left: 0px;
+    top: 20px;
+}
+
+a:hover {
+    /**/
+    text-decoration: underline;
+}
+
+.navBar ul {
+    list-style: none;
+    position: absolute;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    /**/
+}
+
+#first {
+    top: 24px;
+    font-weight: normal;
+    left: 650px;
+    right: 400px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #2F281E;
+}
+
+#second {
+    top: 15px;
+    left: 1029px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#up {
+    padding: 11px 23px 11px 25px;
+    margin: 0px;
+}
+
+#in {
+    display: block;
+    padding: 10px 21.22px 10px 24.25px;
+    margin: 0px;
+    color: #173A56;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: #BCD0E5;
+    background-color: #ffffff;
+}
+
+.navBar li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.headerMain {
+    display: block;
+    position: absolute;
+    width: 1126px;
+    height: 496px;
+    left: 145px;
+    top: 128px;
+}
+
+.tMain {
+    display: block;
+    position: absolute;
+    width: 518px;
+    height: 233px;
+    top: 83px;
+}
+
+.hTitleFont {
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: #2F281E;
+    margin: 0px;
+    padding: 0px;
+    height: 108px;
+    width: 518px;
+}
+
+.subTxt {
+    position: absolute;
+    display: block;
+    width: 458px;
+    height: 95px;
+    top: 138px;
+}
+
+.subTxt p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #544837;
+    padding: 0px;
+    margin: 0px;
+}
+
+.btmLinks {
+    display: block;
+    top: 361px;
+    left: 0px;
+    position: absolute;
+    width: 366px;
+    height: 53px;
+}
+
+.btmLinks ul {
+    position: absolute;
+    font-size: 16px;
+    line-height: 24px;
+    list-style: none;
+    /**/
+    margin: 0px;
+    padding: 0px;
+}
+
+.btmLinks li {
+    display: inline-block;
+    /* padding: 0px;
+   margin: 0px;
+   */
+}
+
+.btmLinks a {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.rounded {
+    display: block;
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.hPicture {
+    display: block;
+    position: absolute;
+    width: 605px;
+    height: 496px;
+    left: 521px;
+    top: 0px;
+}
+
+#getStarted {
+    padding: 15px 41px 14px 41px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+#watchVideo {
+    text-decoration: underline;
+    color: #FF9900;
+    font-weight: 600;
+}
+
+#videoBtn {
+    position: relative;
+    display: inline-block;
+    margin-right: 8.5px;
+    top: 5px;
+    padding: 0px;
+}
+
+
+/*REMEMBER THAT SOME HAVE RANDOM DEFAULT PADDING AND MARGIN VALUES*/
+
+
+/*is there a default gap between li items*/
