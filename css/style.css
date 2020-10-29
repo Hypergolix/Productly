@@ -3,6 +3,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    /*this is only needed when opening the file directly and not using the live server plugin*/
+    text-decoration: none;
+}
+
 body {
     margin: 0px;
     padding: 0px;
