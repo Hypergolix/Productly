@@ -5,205 +5,484 @@
 
 body {
     margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    /*some things are going off screen, add safe justify?*/
+    /*not sure why this is working when the navbar is 100%, seems to be limited by the headerMain element size*/
 }
 
-.logo {
-    position: absolute;
-    width: 185.34px;
-    height: 31.97px;
-    left: 143.92px;
-    top: 22px;
+#logo {
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 24px;
 }
 
 .navBar {
-    position: relative;
-    width: 1400px;
-    /*change to percentages*/
-    height: 78px;
-    left: 0px;
+    display: flex;
     top: 20px;
-}
-
-a:hover {
-    /**/
-    text-decoration: underline;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    /*The body's justify center, */
+    /*Good enough for now, would rather the navBar scaled. The main element takes priority*/
 }
 
 .navBar ul {
-    list-style: none;
-    position: absolute;
-    font-style: normal;
+    display: flex;
     margin: 0px;
     padding: 0px;
-    /**/
+    flex-direction: row;
+    list-style: none;
+    white-space: nowrap;
 }
 
-#first {
-    top: 24px;
+.navBar li {
+    display: flex;
+    margin: 0px;
+    margin-right: 10px;
+    padding: 0px;
+}
+
+.left {
+    margin-top: 10px;
+    /*temp fix, use baseline or something in the future*/
+    font-style: normal;
     font-weight: normal;
-    left: 650px;
-    right: 400px;
-    height: 28px;
     font-size: 14px;
     line-height: 28px;
     color: #2F281E;
 }
 
-#second {
-    top: 15px;
-    left: 1029px;
+.roundedBox {
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    white-space: nowrap;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
 }
 
-#up {
-    padding: 11px 23px 11px 25px;
-    margin: 0px;
-}
-
-#in {
-    display: block;
+.SignIn {
+    margin-left: 20px;
     padding: 10px 21.22px 10px 24.25px;
-    margin: 0px;
     color: #173A56;
     border: solid 1px;
     border-radius: 4px;
     border-color: #BCD0E5;
     background-color: #ffffff;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-.navBar li {
-    margin-right: 20px;
-    display: inline-block;
+.SignUp {
+    padding: 11px 23px 11px 25px;
 }
 
 .headerMain {
-    display: block;
     position: relative;
-    width: 1126px;
+    display: flex;
+    width: 100%;
+    /*this width doesn't make any sense, it's being centered by the body but 100% can't be centered. Maybe items inside?*/
     height: 496px;
-    left: 145px;
     top: 30px;
+    align-items: center;
 }
 
-.tMain {
-    display: block;
-    position: absolute;
-    width: 518px;
-    height: 233px;
-    top: 83px;
-}
-
-.hTitleFont {
-    position: absolute;
+.headerMain-left {
+    display: flex;
+    position: relative;
+    height: 331px;
+    width: 480px;
     font-style: normal;
-    font-weight: 700;
+    flex-direction: column;
+    /*justify-items: space-around;*/
+}
+
+.headerMain-right {
+    display: flex;
+    position: relative;
+}
+
+.mainTitle {
+    display: flex;
+}
+
+.mainTitle p {
+    margin: 0px;
+    font-weight: bold;
     font-size: 44px;
     line-height: 54px;
+    /* or 123% */
     color: #2F281E;
-    margin: 0px;
-    padding: 0px;
-    height: 108px;
-    width: 518px;
 }
 
-.subTxt {
-    position: absolute;
-    display: block;
-    width: 458px;
-    height: 95px;
-    top: 138px;
-}
-
-.subTxt p {
-    font-style: normal;
+.subText p {
     font-weight: normal;
     font-size: 18px;
     line-height: 28px;
+    /* or 156% */
     color: #544837;
-    padding: 0px;
+}
+
+.links {
+    position: relative;
+    display: flex;
+    top: 45px;
+}
+
+.links ul {
     margin: 0px;
-}
-
-.btmLinks {
-    display: block;
-    top: 361px;
-    left: 0px;
-    position: absolute;
-    width: 366px;
-    height: 53px;
-}
-
-.btmLinks ul {
-    position: absolute;
-    font-size: 16px;
-    line-height: 24px;
+    padding: 0px;
+    display: flex;
     list-style: none;
-    /**/
+    flex-direction: row;
+}
+
+.links li {
+    white-space: nowrap;
     margin: 0px;
     padding: 0px;
 }
 
-.btmLinks li {
-    display: inline-block;
-    /* padding: 0px;
-   margin: 0px;
-   */
-}
-
-.btmLinks a {
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-}
-
-.rounded {
-    display: block;
-    background-color: #FF9900;
-    color: white;
-    border: none;
-    border-radius: 4px;
-}
-
-.hPicture {
-    display: block;
-    position: absolute;
-    width: 605px;
-    height: 496px;
-    left: 521px;
-    top: 0px;
-}
-
-#getStarted {
+.getStarted {
     padding: 15px 41px 14px 41px;
-    margin: 0px;
-    font-weight: bold;
 }
 
-#watchVideo {
+.watchVideo {
     text-decoration: underline;
     color: #FF9900;
     font-weight: 600;
 }
 
-#videoBtn {
-    position: relative;
-    display: inline-block;
+.links i {
+    color: #FF9900;
     margin-right: 8.5px;
-    top: 5px;
+    margin-left: 30.5px;
+}
+
+.banner1 {
+    /*temp under header as putting it in main breaks the format*/
+    position: relative;
+    display: flex;
+    top: 110px;
+    height: 543px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleText2 {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #2F281E;
+    text-align: center;
+    max-width: 530px;
+}
+
+.bannerSub {
+    position: relative;
+    top: 54px;
+    display: flex;
+    flex-flow: row wrap;
+    /*flex-flow: row nowrap;*/
+    width: 100%;
+    min-height: 204px;
+    justify-content: space-between;
+}
+
+.box {
+    width: 240px;
+    height: 204px;
+}
+
+.p2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #2F281E;
+}
+
+.p3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.p4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2F281E;
+}
+
+.title1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #2F281E;
+}
+
+.SignNow {
+    position: relative;
+    top: 80px;
+    padding: 15px 32px 14px 34px;
+}
+
+.mainContent1 {
+    position: relative;
+    display: flex;
+    height: 574px;
+    width: 100%;
+    top: 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentLeft1 {
+    display: flex;
+    flex-direction: column;
+    width: 486px;
+    height: 531px;
+    justify-content: space-between;
+}
+
+.contentRight1 {
+    height: 574px;
+    width: 520px;
+}
+
+.mainContent1 p {
+    margin: 0px;
     padding: 0px;
 }
 
-.space {
-    width: 10px;
-    height: 1000px;
-    display: block;
-    margin: 0px;
+.mainContent2 {
+    position: relative;
+    display: flex;
+    height: 530px;
+    width: 100%;
+    top: 200px;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.contentLeft2 {
+    width: 535px;
+    height: 520.03px;
+}
 
-/*REMEMBER THAT SOME HAVE RANDOM DEFAULT PADDING AND MARGIN VALUES*/
+.contentRight2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 456px;
+    height: 427px;
+}
 
+.contentRight2 ul {
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-/*is there a default gap between li items*/
+.contentRight2 li {
+    background: url('img_tick.svg') no-repeat left center;
+    height: 54px;
+    padding-left: 44px;
+    padding-top: 0px;
+}
+
+.mainContent2 p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainContent3 {
+    position: relative;
+    display: flex;
+    top: 300px;
+    /*this temporary fix is starting to catch up*/
+    height: 609px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentRight3 {
+    width: 542px;
+    height: 609px;
+}
+
+.contentLeft3 {
+    width: 486px;
+    height: 531px;
+}
+
+.footMain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 308px;
+    top: 400px;
+    width: 100%;
+}
+
+.foot1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+
+.divider {
+    justify-self: center;
+    align-self: center;
+    height: 1px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.logoFooter {
+    width: 185px;
+    height: 32px;
+    align-self: flex-start;
+}
+
+.foot2 {
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    justify-content: flex-end;
+    height: 208px;
+    width: 100%;
+}
+
+.foot2 ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px 80px 0px;
+    /**/
+    align-self: flex-end;
+}
+
+.foot2 ul li a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 35px;
+    color: #544837;
+}
+
+.rightBoxes {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 330px;
+    height: 199px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footMain input[type=text] {
+    height: 48px;
+    width: 325px;
+    padding: 0px;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: #BCD0E5;
+    margin: 0px;
+    font-size: 16px;
+}
+
+#now {
+    width: 131px;
+    text-align: center;
+    padding: 8px;
+    margin: 20px 0px 0px 0px;
+}
+
+a:hover {
+    color: lightgray;
+    /*highlight icon and text at the same time*/
+}
+
+ul li a:hover {
+    color: lightgray;
+}
+
+@media only screen and ( max-width:550px) {
+    .SignIn {
+        display: none;
+    }
+}
+
+@media only screen and ( max-width:900px) {
+    .headerMain-right {
+        display: none;
+    }
+    .headerMain {
+        justify-content: center;
+    }
+    .contentRight1 {
+        display: none;
+    }
+    .mainContent1 {
+        justify-content: center;
+    }
+    .bannerSub {
+        justify-content: center;
+    }
+    .banner1 {
+        height: 700px;
+    }
+    .contentLeft2 {
+        display: none;
+    }
+    .mainContent2 {
+        justify-content: center;
+    }
+    .contentRight3 {
+        display: none;
+    }
+    .mainContent3 {
+        justify-content: center;
+    }
+    .SignUp {
+        display: none;
+    }
+    .logoFooter {
+        align-self: center;
+    }
+    .rightBoxes {
+        display: none;
+    }
+    .foot2 ul {
+        align-self: center;
+    }
+    .foot2 {
+        justify-content: center;
+    }
+}
